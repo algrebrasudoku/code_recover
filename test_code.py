@@ -132,8 +132,7 @@ def recursive(depth=0, max_depth=5):
 # Bare Except
 # =========================
 def unsafe_exception():
-    try:
-        x = 1 / 0
+  
     except ZeroDivisionError as e:
         logger.error(f"Error occurred: {e}")
 
